@@ -1,0 +1,9 @@
+<main class="container-fluid flex-shrink-0 border border-danger m-1 p-1 ">
+  <small>Padre &lt;app-principal&gt;</small>
+ <div class="d-flex flex-row justify-content-around "> 
+   <div><label class="m-1">Padrea:</label><input type="text" [(ngModel)]="apadre"></div>
+   <div>{{bpadre}}</div>
+  </div>
+  <app-menu (mievento)="getMensaje($event)"></app-menu>
+  <app-portada [ahijo]="apadre"></app-portada>
+</main>
